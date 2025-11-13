@@ -28,30 +28,39 @@ export default function LoginPage() {
         </div>
 
         <div className={classes["form-container"]}>
-          <span>LOG IN</span>
+          {/* <span>LOG IN</span> */}
           <form className={classes.form}>
             <div className={classes["input-group"]}>
               <label htmlFor="name"></label>
-              <input type="name" id="name" placeholder="Name" required />
+              <input
+                type="text"
+                id="text"
+                placeholder="Name:"
+                required
+                className={classes.input}
+              />
             </div>
             <div className={classes["input-group"]}>
               <label htmlFor="password"></label>
               <input
                 type="password"
                 id="password"
-                placeholder="Password"
+                placeholder="Password:"
                 required
+                className={classes.input}
               />
             </div>
-            <div>
-              <label htmlFor="remember">Remember Me</label>
-              <input type="checkbox" id="checkbox" required />
-              <a href="#" className={classes.forgotPassword}>
+            <div className={classes.options}>
+              <label htmlFor="remember">
+                <input type="checkbox" id="checkbox" required />
+                Remember Me
+              </label>
+              <a href="#" className={classes["forgot-password"]}>
                 Forgot Password?
               </a>
             </div>
             <button type="submit" className={classes.button}>
-              Log In
+              LOG IN
             </button>
           </form>
         </div>

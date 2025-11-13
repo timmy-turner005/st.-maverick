@@ -44,3 +44,9 @@ a {
 span {
   text-transform: uppercase;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
