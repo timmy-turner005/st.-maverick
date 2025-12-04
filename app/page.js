@@ -5,14 +5,15 @@ import Image from "next/image";
 export default function LoginPage() {
   return (
     <Fragment>
-      <header className={classes.header}>
+      {/* <header className={classes.header}>
         <h2 className={classes.title}>
           Welcome to <span>st. maverick schools</span>
         </h2>
-      </header>
+      </header> */}
       <div className={classes.subtitles}>
         <p className={classes.subtitle}>Maverick Schools Portal</p>
       </div>
+      <p>LOG IN</p>
       <section className={classes.container}>
         <div className={classes.image}>
           <Image
@@ -28,7 +29,6 @@ export default function LoginPage() {
         </div>
 
         <div className={classes["form-container"]}>
-          {/* <span>LOG IN</span> */}
           <form className={classes.form}>
             <div className={classes["input-group"]}>
               <label htmlFor="name"></label>
@@ -52,7 +52,7 @@ export default function LoginPage() {
             </div>
             <div className={classes.options}>
               <label htmlFor="remember">
-                <input type="checkbox" id="checkbox" required />
+                <input type="checkbox" id="checkbox" />
                 Remember Me
               </label>
               <a href="#" className={classes["forgot-password"]}>
