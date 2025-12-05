@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function LoginPage() {
   return (
     <Fragment>
-      {/* <header className={classes.header}>
+      <header className={classes.header}>
         <h2 className={classes.title}>
           Welcome to <span>st. maverick schools</span>
         </h2>
-      </header> */}
+      </header>
       <div className={classes.subtitles}>
         <p className={classes.subtitle}>Maverick Schools Portal</p>
       </div>
